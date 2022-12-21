@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/content.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <b>Interviews Made Easy</b>
+        </h1>
+        <h3> <b> <i> Using <span class="liasion--name">{Liasion}</span> </i> </b> </h3>
+        
+        
+        <h3> 
+            <a href="#popup1" target="">
+                <b>Schedule a Meet</b> 
+            </a> 
+            <a href="./FirebaseRTC/public/index.html" target="">
+                <b>Join the Meet</b> 
+            </a> 
+         
+        </h3>
+
+        <!-- pop -->
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+              <h2>Schedule a Meet</h2>
+
+              <form onsubmit="CandidateSendEmail(), InterSendEmail(); reset() ;return false">
+                <h5 style="color: black;"><b>Candidate Details</b></h5>
+              <div class="col-md-6 box">
+                <input class="fnameInput cdName" placeholder="Candidate Name" />
+              </div>
+        
+              <div class="col-md-6 box">
+                <input class="lnameInput cdEmail" placeholder="candidate EmailID" />
+              </div>
+              <h5 style="color: black;"><b>Interviewer Details</b></h5>
+              <div class="col-md-6 box">
+                <input class="phoneInput IntName" placeholder="Interviewer Name" />
+              </div>
+              <div class="col-md-6 box">
+                <input class="emailInput IntEmail" placeholder="Interviewer Email" />
+              </div>
+        
+         
+              <div class="col-md-12 box">
+                <button onclick="log()" class="btn" type="submit">Submit</button>
+              </div>
+            </form>
+
+              <a class="close" href="#">&times;</a>
+              <!-- <div class="content">
+                Thank to pop me out of that button, but now i'm done so you can close this window.
+              </div> -->
+            </div>
+          </div>
+
+        <!-- popop -->
+        
+        <h5><small>Website by Beer Bahadur</small></h5>
+       
+            
+    </div>
+
+    <!-- pop -->
+    
+    
+    <!-- Pure CSS3 Animated Gradient Background by RaidanDev (GalacticB69)-->
+    <script src="./index.js"></script>
+
+    <!-- Adding the smtp server for sending Emails -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./javascript/smpt.js"></script>
+</body>
+</html>

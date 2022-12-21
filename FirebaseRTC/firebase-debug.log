@@ -1,0 +1,87 @@
+[debug] [2022-12-18T08:44:32.405Z] ----------------------------------------------------------------------
+[debug] [2022-12-18T08:44:32.406Z] Command:       /opt/homebrew/Cellar/node/18.11.0/bin/node /opt/homebrew/bin/firebase serve --only hosting
+[debug] [2022-12-18T08:44:32.406Z] CLI Version:   11.18.0
+[debug] [2022-12-18T08:44:32.406Z] Platform:      darwin
+[debug] [2022-12-18T08:44:32.406Z] Node Version:  v18.11.0
+[debug] [2022-12-18T08:44:32.407Z] Time:          Sun Dec 18 2022 14:14:32 GMT+0530 (India Standard Time)
+[debug] [2022-12-18T08:44:32.407Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-18T08:44:32.448Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-18T08:44:32.448Z] > authorizing via signed-in user (spratap.03.09@gmail.com)
+[debug] [2022-12-18T08:44:32.448Z] [iam] checking project fir-rtc-80924 for permissions ["firebase.projects.get"]
+[debug] [2022-12-18T08:44:32.449Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-80924:testIamPermissions [none]
+[debug] [2022-12-18T08:44:32.449Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-80924:testIamPermissions x-goog-quota-user=projects/fir-rtc-80924
+[debug] [2022-12-18T08:44:32.449Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-80924:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-18T08:44:35.763Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-80924:testIamPermissions 200
+[debug] [2022-12-18T08:44:35.763Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-80924:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-18T08:44:35.765Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-80924 [none]
+[debug] [2022-12-18T08:44:38.227Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-80924 200
+[debug] [2022-12-18T08:44:38.227Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-80924 {"projectId":"fir-rtc-80924","projectNumber":"202410468651","displayName":"fireBaseRTC","name":"projects/fir-rtc-80924","resources":{"hostingSite":"fir-rtc-80924"},"state":"ACTIVE","etag":"1_beaad016-35b9-4423-b96a-09119fbc7c07"}
+[debug] [2022-12-18T08:44:38.232Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-rtc-80924/sites 
+[debug] [2022-12-18T08:44:42.686Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-rtc-80924/sites 200
+[debug] [2022-12-18T08:44:42.687Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-rtc-80924/sites {"sites":[{"name":"projects/fir-rtc-80924/sites/fir-rtc-80924","defaultUrl":"https://fir-rtc-80924.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-12-18T08:44:42.688Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-80924/webApps/-/config [none]
+[debug] [2022-12-18T08:44:43.813Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-80924/webApps/-/config 200
+[debug] [2022-12-18T08:44:43.813Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-80924/webApps/-/config {"projectId":"fir-rtc-80924","storageBucket":"fir-rtc-80924.appspot.com","apiKey":"AIzaSyCUc2UVppMRZKKyPFnBMYyDNYmQkV94nIw","authDomain":"fir-rtc-80924.firebaseapp.com","messagingSenderId":"202410468651"}
+[debug] [2022-12-18T08:44:43.825Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-80924 [none]
+[debug] [2022-12-18T08:44:44.535Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-80924 200
+[debug] [2022-12-18T08:44:44.535Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-80924 {"projectId":"fir-rtc-80924","projectNumber":"202410468651","displayName":"fireBaseRTC","name":"projects/fir-rtc-80924","resources":{"hostingSite":"fir-rtc-80924"},"state":"ACTIVE","etag":"1_beaad016-35b9-4423-b96a-09119fbc7c07"}
+[info] i  hosting[fir-rtc-80924]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[fir-rtc-80924]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [18/Dec/2022:08:44:49 +0000] "GET /app.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [18/Dec/2022:08:44:49 +0000] \"GET /app.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [18/Dec/2022:08:44:50 +0000] "GET /__/firebase/init.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [18/Dec/2022:08:44:50 +0000] \"GET /__/firebase/init.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [18/Dec/2022:08:45:13 +0000] "GET / HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [18/Dec/2022:08:45:13 +0000] \"GET / HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [18/Dec/2022:08:45:14 +0000] "GET /__/firebase/init.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [18/Dec/2022:08:45:14 +0000] \"GET /__/firebase/init.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] Shutting down...
+[debug] [2022-12-18T08:49:51.072Z] Error: Timed out.
+    at Timeout._onTimeout (/opt/homebrew/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-12-18T08:54:10.506Z] ----------------------------------------------------------------------
+[debug] [2022-12-18T08:54:10.507Z] Command:       /opt/homebrew/Cellar/node/18.11.0/bin/node /opt/homebrew/bin/firebase serve --only hosting
+[debug] [2022-12-18T08:54:10.507Z] CLI Version:   11.18.0
+[debug] [2022-12-18T08:54:10.507Z] Platform:      darwin
+[debug] [2022-12-18T08:54:10.507Z] Node Version:  v18.11.0
+[debug] [2022-12-18T08:54:10.508Z] Time:          Sun Dec 18 2022 14:24:10 GMT+0530 (India Standard Time)
+[debug] [2022-12-18T08:54:10.508Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-18T08:54:10.553Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-18T08:54:10.553Z] > authorizing via signed-in user (spratap.03.09@gmail.com)
+[debug] [2022-12-18T08:54:10.553Z] [iam] checking project fir-rtc-80924 for permissions ["firebase.projects.get"]
+[debug] [2022-12-18T08:54:10.554Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-80924:testIamPermissions [none]
+[debug] [2022-12-18T08:54:10.554Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-80924:testIamPermissions x-goog-quota-user=projects/fir-rtc-80924
+[debug] [2022-12-18T08:54:10.554Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-80924:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-18T08:54:40.560Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-80924:testIamPermissions
+[debug] [2022-12-18T08:54:40.562Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-80924 [none]
+[debug] [2022-12-18T08:55:10.566Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/fir-rtc-80924
+[debug] [2022-12-18T08:55:15.580Z] Error: Timed out.
+    at Timeout._onTimeout (/opt/homebrew/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-12-18T08:55:44.796Z] ----------------------------------------------------------------------
+[debug] [2022-12-18T08:55:44.797Z] Command:       /opt/homebrew/Cellar/node/18.11.0/bin/node /opt/homebrew/bin/firebase serve --only hosting
+[debug] [2022-12-18T08:55:44.797Z] CLI Version:   11.18.0
+[debug] [2022-12-18T08:55:44.797Z] Platform:      darwin
+[debug] [2022-12-18T08:55:44.797Z] Node Version:  v18.11.0
+[debug] [2022-12-18T08:55:44.799Z] Time:          Sun Dec 18 2022 14:25:44 GMT+0530 (India Standard Time)
+[debug] [2022-12-18T08:55:44.799Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-18T08:55:44.853Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-18T08:55:44.853Z] > authorizing via signed-in user (spratap.03.09@gmail.com)
+[debug] [2022-12-18T08:55:44.853Z] [iam] checking project fir-rtc-80924 for permissions ["firebase.projects.get"]
+[debug] [2022-12-18T08:55:44.854Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-80924:testIamPermissions [none]
+[debug] [2022-12-18T08:55:44.854Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-80924:testIamPermissions x-goog-quota-user=projects/fir-rtc-80924
+[debug] [2022-12-18T08:55:44.854Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-80924:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-18T08:55:54.083Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-80924:testIamPermissions
+[debug] [2022-12-18T08:55:54.084Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-80924 [none]
+[debug] [2022-12-18T08:56:06.868Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/fir-rtc-80924
+[debug] [2022-12-18T08:56:11.876Z] Error: Timed out.
+    at Timeout._onTimeout (/opt/homebrew/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
